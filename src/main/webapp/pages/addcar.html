@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='./main.css'>
+</head>
+
+<body>
+    <form id ="addForm" action="/CarDealership/car" method="post">
+
+          
+          <label for="type">Event Type</label><br> 
+          <select name="type">
+              <option value="zz" disabled selected>Select event type</option>  
+              <option value="University courses">University Courses</option>
+              <option value="Seminars">Seminars</option>
+              <option value="Certificate Prep Class">Certificate Prep Class</option>
+              <option value="Certification">Certification</option>
+              <option value="Technical Training">Technical Training</option>
+              <option value="Other">Other</option>
+          </select><br>
+          <label for="description">Event description</label><br>  
+          <input type="text" id="description" name="description"><br>
+          <label for="location">Event location</label><br>  
+          <input type="text" id="location" name="location"><br>
+          <label for="date">Event date</label><br>  
+          <input type="date" id="date" name="date" onclick="nextweek()"><br>
+          <label for="cost">Event cost</label><br>  
+          <input type="number" id="cost" name="cost"><br>
+          <label for="grading_format">Grading format</label><br>  
+          <input type="text" id="grading_format" name="grading_format"><br>
+          <label for="attachment">Attach a file</label><br>  
+          <input type="file" id="attachment" name="attachment"><br><br>
+          <button type="submit" id="addForm" class="btn btn-primary">Submit Form</button> 
+    </form>  
+ </body>  
+
+</html>
