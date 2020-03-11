@@ -16,8 +16,8 @@
 
           
           <label for="type">Event Type</label><br> 
-          <select name="type">
-              <option value="zz" disabled selected>Select event type</option>  
+          <select name="type" required> 
+                <!-- University Courses 80%, Seminars 60%, Certification Preparation Classes 75%, Certification 100%, Technical Training 90%, Other 30% -->
               <option value="University courses">University Courses</option>
               <option value="Seminars">Seminars</option>
               <option value="Certificate Prep Class">Certificate Prep Class</option>
@@ -25,16 +25,18 @@
               <option value="Technical Training">Technical Training</option>
               <option value="Other">Other</option>
           </select><br>
-          <label for="description">Event description</label><br>  
-          <input type="text" id="description" name="description"><br>
+          <label for="description" required>Event description</label><br>  
+          <input type="text" id="description" name="description" required><br>
+          <label for="description" >Justification</label><br>  
+          <input required type="text" id="justification" name="justification"><br>
           <label for="location">Event location</label><br>  
-          <input type="text" id="location" name="location"><br>
+          <input required type="text" id="location" name="location"><br>
           <label for="date">Event date</label><br>  
-          <input type="date" id="date" name="date" onclick="nextweek()"><br>
-          <label for="cost">Event cost</label><br>  
-          <input type="number" id="cost" name="cost"><br>
+          <input required type="date" id="date" name="date" onclick="nextweek()"><br>
+          <label required for="cost">Event cost</label><br>  
+          <input required type="number" id="cost" name="cost"><br>
           <label for="grading_format">Grading format</label><br>  
-          <input type="text" id="grading_format" name="grading_format"><br>
+          <input required type="text" id="grading_format" name="grading_format"><br>
           <label for="attachment">Attach a file</label><br>  
           <input type="file" id="attachment" name="attachment"><br><br>
           <button type="submit" id="addForm" class="btn btn-primary">Submit Form</button> 
