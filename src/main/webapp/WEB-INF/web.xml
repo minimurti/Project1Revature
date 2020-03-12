@@ -26,15 +26,15 @@
   <servlet-mapping>
     <servlet-name>LoginServlet</servlet-name>
     <url-pattern>/login</url-pattern>
-  </servlet-mapping>  
+  </servlet-mapping>
   <servlet>
     <description></description>
     <display-name>EmployeeServlet</display-name>
     <servlet-name>EmployeeServlet</servlet-name>
     <servlet-class>com.revature.servlet.EmployeeServlet</servlet-class>
   </servlet>
- <servlet-mapping>
-  <servlet-name>EmployeeServlet</servlet-name>
+  <servlet-mapping>
+    <servlet-name>EmployeeServlet</servlet-name>
     <url-pattern>/empserv</url-pattern>
   </servlet-mapping>
   <servlet>
@@ -47,8 +47,34 @@
     <servlet-name>CarLotServlet</servlet-name>
     <url-pattern>/carlot</url-pattern>
   </servlet-mapping>
-  
-
-  
-
+  <servlet>
+    <description></description>
+    <display-name>Amounts</display-name>
+    <servlet-name>Amounts</servlet-name>
+    <servlet-class>com.revature.servlet.Amounts</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Amounts</servlet-name>
+    <url-pattern>/Amounts</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FormLot</display-name>
+    <servlet-name>FormLot</servlet-name>
+    <servlet-class>com.revature.servlet.FormLot</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FormLot</servlet-name>
+    <url-pattern>/FormLot</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Modify</display-name>
+    <servlet-name>Modify</servlet-name>
+    <servlet-class>com.revature.servlet.Modify</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Modify</servlet-name>
+    <url-pattern>/Modify</url-pattern>
+  </servlet-mapping>
 </web-app>
