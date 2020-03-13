@@ -45,15 +45,15 @@ function displayCarList(formList){
         cost.innerHTML = form.cost;
         reimbursment.innerHTML = form.reimbursment;
         grading_format.innerHTML = form.grading_format;
-        id.innerHTML = `<form action="/CarDealership/Modify" method="post">
-        <input name = "accRej" value = "3" style = "display: none;">
+        id.innerHTML = `<form action="/CarDealership/Modify" method="post" style="display: inline-block;">
+        <input name = "accRej" value = "3" style = "display: none;" class = "AoR">
         <input name = "id" value="${form.id}" style="display: none;">
-        <input type="submit" value="A" style="display: block;">
+        <input type="submit" value="A" style="display: inline-block;" class = "AoR">
         </form>
-        <form action="/CarDealership/Modify" method="post">
-        <input name = "accRej" value = "2" style = "display: none;">
+        <form action="/CarDealership/Modify" method="post" style="display: inline-block;">
+        <input name = "accRej" value = "2" style = "display: none;" >
         <input name = "id" value="${form.id}" style="display: none;">
-        <input type="submit"  value="R" style="display: block;">
+        <input type="submit"  value="R" style="display: inline-block;" class = "AoR">
         </form>`
 
 
