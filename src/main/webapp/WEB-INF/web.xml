@@ -77,4 +77,14 @@
     <servlet-name>Modify</servlet-name>
     <url-pattern>/Modify</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Grade</display-name>
+    <servlet-name>Grade</servlet-name>
+    <servlet-class>com.revature.servlet.Grade</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Grade</servlet-name>
+    <url-pattern>/Grade</url-pattern>
+  </servlet-mapping>
 </web-app>
